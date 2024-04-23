@@ -1,0 +1,1931 @@
+
+1. CYCLE - I (HTML) 
+1.1 Create and test an HTML document for:
+a)	Yourself, including your name, address, and electronic mail address.  If you are a student, you must include your major and your grade level. If you work, you must include your employer, your employer’s address, and your job title.
+b)	Add pictures of yourself and at least one other image (of your friend, spouse, or pet) to the document created.
+c)	Add a second document to the document created that describes part of your background, using background as the link content. This document should have a few paragraphs of your personal or professional history.
+Note:- This document must use several  headings and <em>, <strong>, <hr />, <p>, and <br /> tags.
+
+<!DOCTYPE html>
+<!—1a.html-->
+<html lang="en">
+<head>
+		<title>Information</title>
+		<meta charset  ="utf-8" />
+</head>
+<body>
+<img src="C:\Users\USER\OneDrive\Desktop\wt lab\manoj.jpg.JPG" height="200" width="200" alt="My profile picture"/>
+<h1>Student  information</h1>
+<p>
+Lasya L<br />
+USN:20IS048<br />
+College:Sri Siddartha Institute of  Technology <br />
+email:20is048@ssit.edu.in <br />
+Branch:Information Science and Engineering <br />
+</p>
+<hr />
+<h2>Major and Grade</h2>
+<p> Bachelor of Engineering at 
+<em>Sri Siddartha Institute of Technology</em>
+<br />
+Grade:A<br />
+CGPA:7.51 <br />
+SGPA:7.27 <br />
+<strong> <a href="C:\Users\USER\OneDrive\Desktop\wt lab\1b.html">Best Friend </a>
+</strong><br />
+
+<strong><a href="C:\Users\USER\OneDrive\Desktop\wt lab\1c.html">My Info</a></strong>
+</p>
+</body>
+</html>
+
+
+<DOCTYPE html>
+<!--1b.html-->
+<html lang="en">
+	<head>
+		<title>My Bestfriend and Our Faculty</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<center>
+		<h2>My Bestfriends</h2>
+<img src="C:\Users\USER\OneDrive\Desktop\wt lab\IMG_0064.JPG" height="75%" width="50%" />
+		<hr />
+		<h2>Our Faculty</h2>
+<img src="C:\Users\USER\OneDrive\Desktop\wt lab\IMG_9795.JPG"         height="500" />
+		</center>
+	</body>
+</html>
+
+<DOCTYPE html>
+<!—1c.html--> 
+<html  lang="en">
+<head>
+		<title>My Info</title>
+		<meta charset="utf-8" />
+</head>
+<body>
+<h1>More Information</h1>
+<pre>
+<h2>
+My name is Lasya L.
+I am the student of SSIT ISE Dept.
+My hobbies are playing cricket,riding bike etc.
+My favourite bike is Kawasaki Ninja H2R.
+</h2>
+</pre>
+</body>
+</html>
+
+ 
+
+Output:
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.2 Develop static pages (using only HTML) of an online Book store. The page should resemble: www.amazon.comand the website should contain the following pages. Home page, Registration and User Login, User Profile page, Books Catalog, Shopping Cart, Payment By Credit Card, Order Confirmation.
+//Main.html
+<html>
+<head>
+<title>Amazon</title>
+</head>
+<body bgcolor="lightblue"> <center>
+<marquee><strong><h1>Welcome to AMAZON</h1></strong></marquee>
+<form method="post" action="login.html" target=_blank >
+<h1>For books</h1>
+</br> </br> 
+<input type="submit" value="Click here" width="300px" height="100px">
+</form>
+</body>
+</html>
+
+//Login.html
+<html>
+<head>
+<title>login page</title>
+</head>
+<body bgcolor="lightblue"> <center>
+<marquee><strong><h1> AMAZON </h1></strong></marquee>
+<table align="center">
+<tr>
+<td><h4>Username</td>
+<td><input type="text" /></td>
+<td></td>
+</tr>
+<tr>
+<td><h4>Password</td>
+<td><input type="password" /></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<form method="post" action="catalog.html" >
+<input type="submit" value="Go" >
+</form>
+</td>
+<td>
+<form method="post" action="userpro.html" >
+
+<input type="submit" value="Submit" >
+<input type="reset" value="Reset">
+</form></td>
+</tr>
+</table>
+</body>
+</html>
+
+//Ctalog.html
+<html>
+<head>
+<title>books catalog</title>
+</head>
+<body bgcolor="lightblue">
+<marquee><h1>AMAZON BOOKS CATALOG</h1></marquee>
+<form method="post" action="shopping.html">
+<center>
+<table>
+<tr>
+<td><b><h1>Frontend books</h1></td>
+<td></td></tr>
+<tr>
+<td><h4>C&Ds</td>
+</tr>
+<tr>
+<td><h4>Ads</td>
+</tr>
+<tr>
+<td><h4>JAVA
+</td></tr>
+<tr>
+<td><b><h1>Backend books</h1></td>
+<td></td>
+</tr>
+<tr>
+<left>
+<td><h4>Oracle</td>
+</tr>
+<tr>
+<td><h4>Ms SQL Server
+</td></tr>
+<tr>
+<td><h4>MySql </td>
+</left>
+</tr>
+</table>
+</h4>
+<center>
+<h2><b>Click here to buy one of these books</b></h2>
+<br/></br>
+</b><input type="submit" value="Submit">
+
+</center>
+</form>
+</body>
+</html>
+
+//Shopping.html
+<html>
+<head>
+<title>shopping cart</title>
+</head>
+<body bgcolor="lightblue">
+<marquee><h1>
+Shopping Cart</h1></marquee>
+<br/><br/></br>
+<table align="center">
+<tr>
+<td>Text Books</td>
+<td>
+<select >
+<optgroup label="select the book">
+<option value="C&Ds">C & DS
+<option value="Ads">Ads
+<option value="Java">Java
+<option value="Oracle">Oracle
+<option value="Ms SQL Server">Ms SQL Server
+<option value="MySql">MySql
+</optgroup>
+</select>
+</td></tr>
+<tr>
+<td>
+Quantity</td>
+<td>
+<input type="text" id="q">
+</td></tr>
+<tr>
+<td></td>
+<td>
+<form method=post action="payment.html">
+<input type="submit" value="Ok" />
+</form>
+</td></tr>
+</table>
+<center>
+<h2><pre>Cost of one book is:"500" + shipping:"100"</pre></h2>
+</center>
+<body>
+</html>
+
+
+//Payment.html
+<html>
+<head>
+<title>payment</title>
+</head>
+<body bgcolor="lightblue">
+<center><h1>Payment By Credit Card</h1></center>
+<form method=post action="ordconform.html">
+<br/><br/><br/>
+<table align="center">
+<tr>
+<td>
+<h4>Total Amount</h4></td>
+<td><input type="text">
+</td>
+</tr>
+<tr>
+<td><h4>Credit Card Number</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>
+</td>
+<td><input type="submit" value=OK>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+//OrderConfirm.html
+<html>
+<head>
+<title>order conformation</title>
+</head>
+<body bgcolor="lightblue">
+<center>
+<h1><b>BOOK SHOPPING</h1>
+<pre><strong>
+<h2>Your order Is Confirmed</h2>
+</strong></pre>
+<h2><b>THANK YOU FOR SHOPPING WITH US</h2>
+</center>
+</body>
+</html>
+
+
+
+
+
+//Userpro.html
+<html>
+<head>
+<title>login page</title>
+</head>
+<body bgcolor="lightblue">
+<center><strong><h1> AMAZON SIGNUP</h1></strong></center>
+<form method="post" action="catalog.html" >
+<table align="left">
+<tr>
+<td><h4>Username</td>
+<td><input type="text" ></td>
+<tr>
+<tr>
+<td><h4>Password</td>
+<td><input type="password"></td>
+</tr>
+<tr>
+<td><h4>Confirm password</td>
+<td><input type="password"></td>
+</tr>
+<tr> 
+<option>
+<td><h4>Male
+<input type="radio" name="sex" id="Male" /></td>
+<td><h4>Female 
+<input type="radio" name="sex" id="Female" /></td>
+</option>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea name="address" rows=5 cols=19>
+</textarea>
+</td>
+<tr>
+<td>
+<input type="submit" value="Submit" ></td>
+<td>
+<input type="reset" value="Reset"></td>
+</tr>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+Output:
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. CYCLE - II (CSS, XML, HTML and bootstrap) 
+
+2.1 Design an XHTML that uses CSS to test External Style Sheets for the chapters of the text book.
+
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8" >
+		<title>Introduction page</title>
+		<link rel="stylesheet" href="1.css">
+	</head>
+	<body>
+		<h2> CHAPTER-01<h2>
+		<center>
+		<h1>Introduction to HTML5</h1>
+		</center>
+		<hr>
+		<h3>Introduction</h3>
+<p> HTML is Hyper Text Markup Language, Latest version is HTML5. This is widely used version. <br>HTML runs under tags.
+</p>
+		<h3> Tags</h3>
+		<p> There are so many tags in HTML, Widely used tags are:-
+<br/> H1 :- This is the heading tag h1 prints most bigger words compared to other heading tags.
+		<br/> html  :- HTML is the tag which contains the html code 
+	</body>
+</html>
+
+//1.css
+
+h1{
+font:bold 2em Helvetica 'Times New Roman'
+}
+h2{
+font:bold 1.8em Helvetica 'Times New Roman'
+}
+h3{
+font:bold 1.2em Helvetica 'Times New Roman'
+}
+p{
+font:1em 'Times New Roman'
+}
+body{background-color:lightblue}	
+	
+
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.2 Create and test an HTML document that describes nested ordered lists of cars. The outer list must have three entries: compact, midsize, and sports. Inside each of these three lists there must be two sublists of body styles. The compact- and midsize-car sublists are two door and four door; the sports-car sublists are coupe and convertible. Each body-style sublist must have at least three entries, each of which is the make and model of a particular car that fits the category. The outer list must use uppercase Roman numerals, the middle lists must use uppercase letters, and the inner lists must use Arabic numerals. The background color for the compact-car list must be pink; for the midsize-car list, it must be blue; for the sports-car list, it must be red. All the styles must be in a document style sheet.
+
+<!DOCTYPE html> 
+<!--e36.html-->
+<html lang = "en">
+<head>
+<title> Exercise 3.6 </title> 
+<style type = "text/css">
+ol{list-style-type: upper-roman;} 
+ol ol{list-style-type: upper-alpha;} 
+ol ol ol{list-style-type: decimal;} 
+li.pink{color:black}
+li.blue{color:blue}
+li.red{color:red}
+</style>
+<meta charset = "utf-8" />
+</head>
+<body bgcolor="skyblue">
+<ol>
+<li class = "black"> Compact Cars 
+<ol>
+<li> Two door
+<ol>
+<li> Hyundai Accent </li> 
+<li> Chevrolet Cobalt </li> 
+<li> Honda Civic </li>
+</ol>
+</li>
+<li> Four door
+<ol>
+<li> Hyundai Accent </li>
+<li> Chevrolet Cobalt </li>
+<li> Honda Civic </li>
+</ol>
+</li>
+</ol>
+</li>
+<li class = "blue"> Midsize Cars
+<ol>
+<li> Two door 
+<ol>
+<li> Honda Accord </li> 
+
+<li> Hyundai Genesis </li>
+<li> Nissan Altima </li> 
+</ol>
+</li>
+<li> Four door
+<ol>
+<li> Honda Accord </li>
+<li> Dodge Avenger </li> 
+<li> Ford Fusion </li> 
+</ol>
+</li>
+</ol>
+</li>
+<li class = "red"> Sports Cars
+<ol>
+<li> Coupe 
+<ol>
+<li> Jaguar XK </li> 
+<li> Ford Mustang </li> 
+<li> Nissan Z </li> 
+</ol>
+</li>
+<li> Convertible 
+<ol>
+<li> Mazda Miata </li>
+<li> Ford Mustang </li> 
+<li> Lotus Elise </li> 
+</ol>
+</li> 
+</ol> 
+</li>
+</ol> 
+</body> 
+</html>
+
+Output:
+
+ 
+
+
+2.3 Design an XHTML that uses CSS to illustrate usage of table, borders, margin and padding.
+
+<?XML version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC="-//w3c//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <!--lab1.html-->
+<link rel="stylesheet" type="text/css"href="mystyle.css"/>
+<title> lab program1 </title>
+</head>
+<body>
+<table border="4" wifth="5%"><!--table with name and email-->
+<tr>
+<th>name</th>
+<th>email</th>
+</tr>
+<tr>
+<td>Dr.HNS</td>
+<td>hms@gmail.com</td>
+</tr>
+<tr>
+<td>Dr.MKV</td>
+<td>mkv@grediffmail.com</td>
+</tr>
+<tr>
+<td>Dr.GTR</td>
+<td>gtr@rnsit.in</td>
+</tr>
+<tr>
+<td>Dr.MVS</td>
+<td>MVS@hotmail.com</td>
+</tr>
+</table>
+<p class="one">
+now is the time<br>[padding:0.2in]
+</p>
+<p>
+<span>this is a text.</span>this is a text.this is a text.this is a text.this is a text.this is a text.this is a text.this is a text.</span>
+</p>
+</body>
+</html>
+
+
+
+
+
+//mystyle.css
+
+p,table,li, 
+{
+	font-family:"lucida calligarhy",arial,"sans serif";
+	margin-left:10pt;
+}
+p{ word-spacing:5px;}
+body{background-color:rgb(200,255,205);}
+p,li,td{font-size:75p%;}
+#td{padding:0.5cm;}
+th
+{
+text-align:center;
+font-size:85%;
+}
+h1,h2,h3,hr{color:#483d8b;}
+table
+{
+border-style:outset;
+background-color:rgb(100,255,105);
+}
+p.one{
+padding:0.2in;
+background-color:#C0C0C0;
+border-style:solid;
+}
+
+
+Output:
+
+ 
+
+
+2.4 Design an XML document to store information about a student in an engineering college SSIT. The information must include USN, Name, and Name of the College, Branch, Year of Joining, and email id. Make up sample data for 3 students and produce a display of the raw XML document. Also create a CSS style sheet for the XML document and use it to create a display that document.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<students>
+		<student>
+		<USN>USN:001</USN>
+		<name>NAME:SANTOSH</name>
+		<college>COLLEGE:SSIT</college>
+		<year>YEAR:2015</year>
+		<branch>BRANCH:Computer Science and Engineering</branch> 
+		<e-mail>E-Mail:santosh@gmail.com</e-mail>
+		</student>
+		<student>
+		<USN>USN:002</USN>
+		<name>NAME:MANORANJAN</name> 
+		<college>COLLEGE:SSIT</college>
+		<branch>BRANCH:Information Science and Engineering</branch> 
+		<e-mail>E-Mail:manoranjan@gmail.com</e-mail>
+		<year>YEAR: 2015</year>
+		</student>
+		<student>
+		<USN>USN:101</USN>
+		<name>NAME:CHETHAN</name>
+		<college>COLLEGE SSIT</college>
+		<branch>BRANCH:Electronics and Communication Engineering
+</branch>
+		<year>YEAR:2015</year>
+		<e-mail>E-Mail:chethan@gmail.com</e-mail>
+		</student>
+		</students>
+	</body>
+</html>
+
+//styles.css
+student {display: block; margin-top: 10px; color: Navy;} 
+USN{display:block; margin-left: 10px; font-size: 14pt; color: Red;} 
+name{display:block; margin-left:20px; font-size: 14pt; color:Blue; } 
+college{display:block; margin-left:20px; font-size:12pt; color:Maroon; } 
+branch{display:block; margin-left:20px; font-size:12pt; color: Purple; } 
+year{display:block; margin-left: 20px; font-size: 14pt; color: Green;} 
+e-mail{display:block; margin-left:20px; font-size:12pt; color:Blue;}
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.5  Write a program to design webpage using frameworks.
+
+How to install and run first bootstrap program.
+	YouTube Link: https://www.youtube.com/watch?v=UolbtLgWlcg.
+	Official Website: https://getbootstrap.com
+	For documentation: https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
+	For examples: https://getbootstrap.com/docs/5.3/examples/  
+	For download: https://getbootstrap.com/docs/5.3/getting-started/download/ 
+	Download Visual Studio Code (IDE): https://code.vsualstudio.com for windows environment.
+	Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps.
+1.	Create a new index.html file in your project root. Include the <meta name= "viewport"> tag as well for proper responsive behavior in mobile device.
+<!doctype html>
+<html lang="en">
+  		<head>
+    		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,  initial-scale=1">
+    		<title>Bootstrap demo</title>
+  		</head>
+ 		<body>
+    		<h1> Hello, world! </h1>
+  		</body>
+</html>
+2.	Include Bootstrap’s CSS and JS. Place the <link> tag in the <head> for our CSS, and the <script> tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing </body>.
+<!doctype html>
+<html lang="en">
+ 		<head>
+    		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,  initial-scale=1">
+    
+<title>Bootstrap demo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/ dist/css/bootstrap.min.css" rel="stylesheet"integrity="sh
+a384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRh O02iuK6FUUVM" crossorigin="anonymous">
+  		</head>
+  		<body>
+    		<h1>Hello, world!</h1>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0 /dist/js/bootstrap.bundle.min.js"integrity="sha384geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  		</body>
+</html>
+You can also include Popper and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd /popper.min.js" integrity="sha384I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/v R+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src=”https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootst rap.min.js” integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK +m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+3.	Hello, world! Open the page in your browser of choice to see your Bootstrapped page.
+	Program can be executed either on the standalone environment or on the web server like live server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.6  Write an XML file which will display the book information which includes the following. 
+a. Title of the book 
+b. Author Name 
+c. ISBN number 
+d. Edition 
+e. PriceDisplay the XML file as follows:  The content should be displayed in table. The header of the table should be in color GREY and the author name column should be displayed in one color and should be capitalized and in bold. Use your own colors for remaining columns. Use CSS for the above purpose.
+
+<?xml version=”1.0” encoding=”ISO-8859-1”?>
+<?xml-stylesheet type=”text/css” href=”exercise17-1.css”?>
+<body>
+    <table>
+        <caption>
+            List of Good Programming Books
+        </caption>
+        <thead>
+            <tr>
+                <th>Title of the book</th>
+                <th>Author Name</th>
+                <th>ISBN</th>
+                <th>Edition</th>
+		<th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Programming on C</td>
+                <td>Denis Riteche</td>
+                <td>Prentice Hall</td>
+		 <td>2nd Edition</td>
+                <td>Rs.250</td>
+            </tr>
+	     <tr>
+                <td>The Complete Reference C++</td>
+                <td>Herbert Schildt</td>
+                <td>McGraw Hill</td> 
+		<td>4th Edition</td>
+                <td>Rs.750</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+
+
+//exercise17-1.css
+body {
+    display: block;
+    margin: 13px;
+}
+table {
+    display: table;
+    width: 600px;
+    caption-side: bottom;
+    border: thin solid black;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+col {
+    display: table-column;
+}
+thead {
+    display: table-header-group; 
+}
+tbody {
+    display: table-row-group;
+}
+tr {
+    display: table-row;
+   
+}
+th, td {
+    display: table-cell;
+    border: thin solid black;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+th {
+    background: lightgrey;
+    
+}
+td {
+    vertical-align: top;
+}
+caption {
+    display: table-caption;
+    font-size: 90%;
+    text-align: right;
+}
+td, th, caption {
+    padding: 5px;
+}
+
+
+
+Output:
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. CYCLE - III (JavaScript) 
+3.1 Write a JavaScript to design a simple calculator to perform the following operations: sum, product, difference and quotient.
+
+<html>
+<head>
+<title>My calculator</title>
+<script type="text/javascript">
+	function call(click_id) {
+	var v1=parseFloat(document.getElementById("ip1").value);
+	var v2=parseFloat(document.getElementById("ip2").value);
+	if(isNaN(v1) || isNaN(v2))
+		alert("enter a valid number");
+	else if(click_id=="add")
+		document.getElementById("output").value=v1+v2;
+	else if(click_id=="sub")
+		document.getElementById("output").value=v1-v2;
+	else if(click_id=="mul")
+		document.getElementById("output").value=v1*v2;
+	else if(click_id=="div")
+		document.getElementById("output").value=v1/v2;
+	}
+</script>
+</head>
+<body>
+<center>
+<h1> A SIMPLE CALCULATOR PROGRAM</h1>
+<table style="background-color:yellow" align=="center">
+<tr>
+<td>
+<form method="get" action="">
+<div width=50% align="center">
+	<label>OP1<input type="text" id="ip1"/></label>
+	<label>op2<input type="text" id="ip2"/></label>
+	<label>total<input type="text" id="output"/></label>
+</div>
+<br>
+<div width=50% align="center">
+<input type="button" value="+" id="add" onclick= "call(this.id)"/>
+<input type="button" value="-" id="sub" onclick= "call(this.id)"/>
+<input type="button" value="*" id="mul" onclick= "call(this.id)"/>
+<input type="button" value="/" id="div" onclick= "call(this.id)"/>
+	<input type="reset" value="clear"/>
+</div>
+</form>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
+
+
+Output:
+
+
+ 
+
+
+
+//Multiplication
+
+
+
+ 
+
+
+
+
+
+3.2 Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10 and outputs XHTML text that displays the resulting values in an XHTML table format.
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Squares and Cubes</title> 
+</head> 
+<body onload="sqrcub();"> 
+<h1 style="text-align: center;color: brown;">Squares and Cubes Using JavaScript</h1> 
+	<hr> 
+	<div id="tab"> 
+	</div> 
+	<script> 
+		function sqrcub() 
+		{ 
+			var result = "<table border='1' cellpadding='10'><tr><th>SNO</th><th>SQUARE</th><th>CUBE</th></tr>"; 
+			var i,sqr=0,cube=0; 
+			for(i=0;i<=10;i++) 
+			{ 
+				sqr = i*i; 
+				cube = Math.pow(i,3); 
+				result += "<tr><td>"+i+"</td><td>"+sqr+"</td><td>"+cube+"</td></tr>"; 
+			} 
+			result += "</table>"; 
+			document.getElementById("tab").innerHTML = result; 
+		} 
+	</script> 
+</body> 
+</html>
+
+Output:
+
+
+  
+
+
+
+3.3 Develop and demonstrate a XHTML file that includes JavaScript script for the following problems: 
+a. Output: The first 20 Fibonacci numbers, which are defined as in the sequence 1, 1, 2, 3, where each number in the sequence after the second is the sum of the two previous numbers. 
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Fibonacci Non Interactive </title>
+	<meta charset = "utf-8" />
+</head>
+<body>
+	<script type = "text/javascript">
+	<!--
+	var first = 1, second = 1, next, count;
+	document.write("First 20 Fibonacci Numbers <br/><br/>");
+	document.write("1 - 1 <br/> 2 - 1 <br/>");
+	for (count = 3; count <= 20; count++) 
+	{
+		next = first + second;
+		document.write(count + " - " + next + "<br/>");
+		first = second;
+		second = next;
+	}
+// -->
+</script>
+</body>
+</html>
+
+Output:
+
+
+ 
+
+
+
+
+b. Modify the script to use prompt to input a number n that is the number of the Fibonacci number required as output.
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> Fibonacci Interactive </title>
+<meta charset = "utf-8" />
+</head>
+<body>
+<script type = "text/javascript">
+<!--
+var first = 1, second = 1, next, count; number = prompt("How many Fibonacci numbers do you want? (3-50)", "");
+if (number >= 3 && number <= 50) 
+{
+	document.write("First " + number + " Fibonacci Numbers <br /><br />");
+	document.write("1 - 1 <br/> 2 - 1 <br />");
+	for (count = 3; count <= number; count++) 
+	{
+		next = first + second;
+		document.write(count + " - " + next + "<br />");
+		first = second;
+		second = next;
+	}
+}
+else
+document.write("Error - number not in the range 3-50");
+//-->
+</script>
+</body>
+</html>
+
+Output:
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.4  Write a JavaScript code that displays text “TEXT-GROWING” with increasing font size in the interval of 100ms in RED COLOR, when the font size reaches 50pt it displays “TEXT-SHRINKING” in BLUE color. Then the font size decreases to 5pt.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript - Grow & Shrink Text</title>
+<center>
+<script language = "JavaScript">
+var c = 0, t1;
+function start()
+{
+t1 = window.setInterval("incr()", 100);
+}
+function incr() {
+c = c + 1;
+t.innerHTML = "TEXT-GROWING : " + c + "pt";
+t.style.fontSize = c + "pt";
+window.status = c;
+if (c > 50) {
+window.clearTimeout(t1);
+alert("Font Size Reached 50pt. Text will Now Shrink");
+t1 = window.setInterval("decr()", 100);
+}
+t.style.color = "black";
+}
+function decr() {
+c = c - 1;
+t.innerHTML = "TEXT-SHRINKING: " + c + "pt";
+t.style.fontSize = c + "pt";
+window.status = c;
+if (c == 5) {
+window.clearTimeout(t1);
+}
+t.style.color = "blue";
+}
+</script>
+<center>
+</head>
+<body bgcolor="skyblue" onload="start()">
+<center>
+<p id="t"></p>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Output:
+
+
+ 
+
+
+
+//Text shrinking
+
+
+
+ 
+
+
+
+
+
+3.5  Develop and demonstrate a XHTML file that includes JavaScript script that uses functions for the following problems: 
+a. Parameter: A string Output: The position in the string of the leftmost vowel. 
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head> 
+		<title> Left most vowel </title> 
+	</head>
+	<body bgcolor="skyblue">
+		<script type="text/javascript">
+			function disp(str) {
+				var reg=/^[a-zA-Z]+$/
+				if(!str.value.match(reg)) {
+					alert("Enter alphabets only!")
+					return false
+				}
+				var i,b
+				b=str.value
+				document.write ( str , str.value ) 
+				for(i=0;i<str.value.length;i++) {
+					switch(b[i]) {
+						case "a":
+						case "A":
+						case "e":
+						case "E":
+						case "i":
+						case "I":
+						case "o":
+						case "O":
+						case "u":
+						case "U":
+alert( "\'"+b[i]+"\' is first vowel found in postion "+(i+1));
+							exit(0);
+						default: 
+								break;
+					}
+				}
+				if(i>=str.value.length) 
+					alert("No vowels found. :(")
+			}
+		</script>
+		<form action="">
+		<center>
+			<h2> Finding the left most Vowel </h2>
+			<p>
+				String: <input type="text" name="str" />
+<input type="button" value="Find" onclick="disp(str)" />
+			</p>
+		</center>
+		</form>
+	</body>
+</html>
+
+
+Output:
+
+
+ 
+
+
+ 
+
+
+
+b. Parameter: A number Output: The number with its digits in the reverse order. 
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head> 
+		<title>Number reversal</title> 
+	</head>
+	<body bgcolor="skyblue">
+		<center>
+		<h1>Printing digits in reverse order</h1>
+		<script type="text/javascript">
+			function disp(str) {
+				var n=0,r=0,res=0
+				n=str.value
+				if( n>0 || n==0 ){
+					while(n!=0){
+						r=n%10
+						n=Math.floor(n/10)
+						res=res*10+r
+					}
+					alert("The reverse of the number is: "+res)
+				}
+				else 
+					alert("Enter a valid number")
+			}
+		</script>
+		<form>
+			<p>
+				Number: <input type="text" name="str" />
+<input type="button"value="Find"onclick="disp(str)" />
+			</p>
+		</form>
+		</center>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Output:
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+c. Parameter: An array of numbers. Output: The numbers of negative elements, zeros and values greater than zero in the given array
+
+<!DOCTYPE html>
+<html>
+	<body bgcolor="skyblue">
+		<center>
+		<h2>
+			JavaScript to count No of Negative, Zero and Positive Elements in an array 
+		</h2>
+		<script>
+			function counter(ar){
+				var num,array1=[0,0,0];
+				for (i=0;i<ar.length;i++) {
+					switch (ar[i]<0) {
+						case true :
+							array1[0]++;
+							break;
+						case false :
+							if (ar[i]==0)
+								array1[1]++;
+							else
+								array1[2]++;
+							break;
+						default :
+							break;
+					}
+				}
+				return(array1);
+			}
+			var ar1=[];
+			var ar=[-1,-2,-3,0,0,5,12,0,-10, 0 , 5 , -20];
+			ar1=counter(ar);
+			document.write ("No of Negative, Zero and Positive Elements are:" + ar1);
+		</script>
+		</center>
+	</body>
+</html>
+
+Output: 
+
+ 
+
+4. Cycle - IV (HTML & JAVA SCRIPT)
+Write an HTML document to provide a form that collects Customer’s name and phone number. 
+a. The phone number must be in the form ddd-ddd-dddd.
+b. The name should be in the form is last-name, first-name, middle-initial, where the first and last names must begin with upper case letters and have at least one lower case letter. Both must be followed immediately by a comma and possibly, one space. The middle initial must be uppercase and may or may not be followed by a period. There can be no characters before or after the whole name. Write a JavaScript that checks the submitted Telephone number and Name to be sure that it conforms to the required formats and then return a response indicating whether the number and name was correct.
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Illustrate form validation</title>
+		<meta charset="utf-8" />
+		<script  type="text/javascript" src="validator.js"></script>
+	<head>
+	<body>
+		<h3>Customer Information</h3>
+		<form action="">
+		<p>
+<label><input type="text"  id="custName" />Name(last name,first name,middle initial)
+		</label>
+		<br /><br />
+<label><input type="text" id="phone" />Phone Number(ddd-ddd-dddd)</label>
+		<br /><br />
+		<input type="reset"  id="Reset"  />
+		<input type="submit"   id="Submit" />
+		</p>
+		</form>
+		<script type="text/javascript" src="validatorr.js"></script>
+	</body>
+<//html>
+
+//validator.js
+
+function   chkName(){
+	var myName=document.getElementById("custName");
+	var pos=myName.value.search(/^[A-Z][a-z]+,?[A-Z][a-z]+,?[A-Z]\.?$/);
+	if(pos!=0)
+	{
+		alert("The name you entered("+myName.value+")is not in the correct form.\n"+"The correct form is:"+"last-name,first-name,middle-initial\n"+"Please go back annd fix your name");
+return false;
+}else
+	return true;
+}
+
+function   chkPhone(){
+	var myPhone=document.getElementById("phone");
+	
+var pos=myPhone.value.search(/^\d{3}-\d{3}-\d{4}$/);
+	if(pos!=0)
+	{
+		alert("The phone number you entered("+myPhone.value+")is not in the correct form.\n"+"The correct form is:ddd-ddd-dddd\n"+"Please go back annd fix your phone number");
+return false;
+}else
+	return true;
+}
+
+//validator.js
+
+document.getElementById("custName").onchange=chkName;
+document.getElementById("phone").onchange=chkPhone;
+
+
+Output:
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+4.2  Develop and test an HTML document that has checkboxes for apple (59 cents each), orange (49 cents each), and banana (39 cents each), along with a Submit button. Each of the checkboxes should have its own onclick event handler. These handlers must add the cost of their fruit to a total cost. An event handler for the Submit button must produce an alert window with the message your total cost is$xxx, where xxx is the total cost of the chosen fruit, including 5 percent sales tax. This handler must return false (to avoid actual submission of the form data).
+
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title> Orders </title>
+<script type = "text/javascript" src= "EventHandler.js" ></script>
+<meta charset = "utf-8" />
+</head>
+<body>
+<h3> Order Form </h3>
+<form name = "orderForm" onSubmit = "finish()">
+<p>
+<label>
+<input type = "text" name = "apples" size = "3" onChange = "appleHandler()" /> Apples</label>
+</p>
+<p>
+<label>
+<input type = "text" name = "oranges" size = "3" onChange ="orangeHandler()" /> Oranges</label>
+</p>
+<p>
+<label>
+<input type = "text" name = "bananas" size = "3" onChange = "bananaHandler()" /> Bananas</label>
+</p>
+
+<p>
+<input type = "reset" name = "reset" />
+<input type = "submit" name = "submit" />
+</p>
+</form>
+</body>
+</html>
+
+//EventHandler.js
+
+var total = 0;
+function appleHandler() {
+var number = document.orderForm.apples.value;
+total = total + number * 0.59;
+}
+function orangeHandler() {
+var number = document.orderForm.oranges.value;
+total = total + number * 0.49;
+}
+
+
+
+function bananaHandler() {
+var number = document.orderForm.bananas.value;
+total = total + number * 0.39;
+}
+function finish() {
+total = total * 1.05;
+alert("Thank you for your order \n" + "Your total cost is: $" + total + "\n");
+}
+
+Output: 
+
+ 
+
+
+ 
+
+
+4.3  Develop and demonstrate, using JavaScript script, a XHTML document that collects the USN (The valid format is: A digit from 1 to 4 followed by two Uppercase characters followed by two digits followed by two uppercase characters followed by three digits; no embedded spaces allowed) of the user. Event handler must be included for the form element that collects this information to validate the input. Messages in the alert windows must be produced when errors are detected. Modify the above program to get the current semester also (restricted to be a number from 1 to 8).
+
+
+<html>
+	<body>
+		<script type="text/javascript">
+			finder=function()
+			{
+				var a=document.getElementById('usn').value;
+				var s=document.getElementById('sem').value;
+				if(a.length==0 || s.length==0)
+				{
+					alert("one of the field is empty");
+					return;
+				}
+				var usn_flag=0;
+				var sem_flag=0;
+				var b=a.toLowerCase();
+var str=b.search(/^[1-4][a-z][a-z][0-9][0-9][a-z][a-z][0-9][0-9][0-9]/);
+				if(str==0)
+				usn_flag=1;
+				str=s.search(/^[1-8]$/);
+				if(str==0)
+					sem_flag=1;
+				if(!sem_flag && !usn_flag)
+					alert("both usn & sem are invalid");
+				else if(sem_flag && !usn_flag)
+					alert("sem is valid\n USN is invalid");
+				else if(!sem_flag && usn_flag)
+					alert("USN is valid\n sem is invalid");
+				else
+					alert("both USN and sem are valid");
+			}
+		</script>
+		<form onsubmit=finder()>
+Enter USN in upper case(DAADDAADDD): <input type=text id=usn><br>
+			Enter sem(1-8): <input type=text id=sem><br>
+			<input type=submit value=submit>
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+Output:
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+5. Cycle - V (PHP & MySQL)
+5.1  Write the PHP programs to do the following. 
+a. Find the transpose of a matrix. 
+b. Multiplication of two matrices. 
+c. Addition of two matrices. 
+Note: Students has to execute either a & c or b & c
+
+<?php
+$a = array(array(1,2,3),array(4,5,6),array(7,8,9));
+$b = array(array(7,8,9),array(4,5,6),array(1,2,3));
+$m=count($a);
+$n=count($a[2]);
+$p=count($b);
+$q=count($b[2]);
+echo "the first matrix :","<br/>";
+for ($row = 0; $row < $m; $row++){
+for ($col = 0; $col < $n; $col++)
+echo " ".$a[$row][$col];
+echo "<br/>";
+}
+echo "The second matrix :"."<br />";
+for ($row = 0; $row < $p; $row++){
+for ($col = 0; $col < $q; $col++)
+echo " ".$b[$row][$col];
+echo "<br/>";
+}
+echo "The Transpose for the first matrix is :"."<br />";
+for ($row = 0; $row < $m; $row++) {
+for ($col = 0; $col < $n; $col++) 
+echo " ".$a[$col][$row];
+echo "<br/>";
+}
+if(($m===$p) and ($n===$q)) {
+echo "The Addition of Matrices is:"."<br />";
+for ($row = 0; $row < 3; $row++){
+for ($col = 0; $col < 3; $col++)
+echo " ".$a[$row][$col]+$b[$row][$col]." ";
+echo "<br/>";
+}}
+if($n===$p){
+echo "The Multiplication of Matrices : <br />";
+$result=array();
+for($i=0;$i< $m; $i++){
+for($j=0;$j < $q; $j++){
+$result[$i][$j] = 0;
+for($k=0;$k < $n; $k++)
+$result[$i][$j] += $a[$i][$k] * $b[$k][$j];
+}}
+for($row = 0;$row < $m; $row++){
+for($col = 0;$col < $q; $col++)
+echo " ".$result[$row][$col];
+echo "<br/>";
+}
+}
+?>
+
+Output:
+
+
+ 
+
+
+
+
+
+
+
+
+
+5.2  Write a PHP program to keep track of the number of visitors visiting the web page and to display this count of visitors, with proper headings.
+
+<?php
+print "<h3>REFRESH PAGE</h3>";
+$name= "counter.txt";
+$file=fopen($name,"r");
+$hits=fscanf($file,"%d");
+fclose($file);
+$hits[0]++;
+$file=fopen($name,"w");
+fprintf($file,"%d",$hits[0]);
+fclose($file);
+print "Total no of views:" .$hits[0];
+?>
+
+
+Output:
+ 
+
+
+
+
+
+5.3  Write a PHP program to display a digital clock which displays the current time of the server.
+
+<html>
+<head>
+<meta http-equiv="refresh" content="l"/>
+<style>
+p{
+  colour:white;
+  font size=90px;
+  position:absolute;
+  top:50%;
+  left:50%;
+transform:translate(-50%,-50%);
+}
+body{background_colour:black;}
+</style>
+<p><?php echo date("h :i :s A");?>
+</p>
+</head>
+</html>
+
+Output:
+
+
+ 
+
+
+
+5.4  Create a XHTML form with Name, Address Line2 and E-mail text fields. On Submitting, store the values in MYSQL table. Retrieve and display the data based on Name.
+
+<html>
+        <h2>Insert Info</h2>
+            <form action="insert.php">
+                Name:<input type=text name=name /><br>
+                Address Line 1:<input type=text name=addr1><br>
+                Address Line 2:<input type=text name=addr2><br>
+                Email-ID:<input type=text name=email><br>
+                <input type=submit value=insert />
+                <input type=reset value=reset />
+            </form>
+        <h2>Search Info</h2>
+            <form action="search.php">
+                Name:<input type=text name=name /><br>
+                <input type=submit value=search />
+                <input type=reset value=reset />
+            </form>
+    </html>
+//insert.php
+
+<?php
+     $name = $_REQUEST['name'];
+     $addr1 = $_REQUEST['addr1'];
+     $addr2 = $_REQUEST['addr2'];
+     $email = $_REQUEST['email'];
+     $con = mysql_connect("localhost") or die('Could not connect');
+     mysql_select_db("test",$con);
+           if(mysql_query("insert into student values('$name','$addr1',               	'$addr2','$email')")) {
+     echo "Data inserted successfully!";
+      }
+      mysql_close($con);
+   ?>
+//search.php
+
+<html>
+     <h2>Search Result</h2>
+         <table border=1>
+          <tr>
+             <th>Name</th><th>Address Line 1</th><th> Line2</th><th>Email-		ID</th>
+            </tr>
+                <?php
+                    $name = $_REQUEST['name'];
+                    $con = mysql_connect("localhost") or die('Could not 				connect');
+                    mysql_select_db("test",$con);
+                    $result = mysql_query("select * from student where name 				like '%".$name."%'");
+                    while ($row = mysql_fetch_array($result))   {
+                            echo "<tr>";
+                            echo "<td>".$row['name']."</td>";
+				    echo "<td>".$row['addr1']."</td>";
+				    echo "<td>".$row['addr2']."</td>";
+                            echo "<td>".$row['email']."</td>";
+                            echo "</tr>";
+
+  }
+                    mysql_close($con);
+                ?>
+            </table>
+     </html>
+
+Setting up the database (MySQL):
+
+1.	Open a terminal and run the command mysql
+2.	In the MySQL prompt run show databases;
+3.	Choose an existing database by running the command use test; where test is the name of an already existing database.
+4.	Now, create a new table by running the command create table student (name varchar (20), addr1 varchar (20), addr2 varchar (20), email varchar (20));
+5.	Run the command exit to exit from the MySQL prompt.
+
+
+Steps for checking output:
+
+1.	Save the .html file in the folder /var/www/html
+2.	Save the .php files in the folder /var/www/html
+3.	Change the file permission of the php files by running the command sudo chmod 777 insert.php search.php
+4.	Make sure the database is set before executing the program.
+5.	Open a browser and in the address bar type localhost/html/11.html
+6.	Input the name, Address 1, Address 2 and email which are stored in the database.
+7.	The output is displayed on the browser by retrieving the values from the database.
+8.	To check if the value is stored correctly in the database,
+9.	Open a terminal and run mysql
+10.	Run the command use test;
+11.	Run the command select * from student; for fetching all the inputs stored in the database.
+Output:
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+5.5  Write a PHP program to sort the student records based on USN which are stored in the database.
+
+<html>
+<body>
+		<style>
+		table,td,th
+{
+border: 1px solid black;
+width: 33%;
+text-align: center;
+border-collapse:collapse; 
+background-color:lightblue;
+}
+table {margin: auto; }
+</style>
+<?php
+$servername "localhost";
+$username "root": =
+$password = "root";
+$dbname= "weblab";
+$a=[];
+$conn=mysqli_connect ($servername,$username,$password,$dbname);
+if ($conn->connect_error)
+die ("Connection failed:"$conn->connect_error); 
+$sql SELECT FROM student":
+$result- $conn->query($sql);
+echo "<br>";
+echo "<center>BEFORE SORTING</center> 
+echo"<table border-'2'>";
+echo "<tr>";
+echo "<th>USN</th><th>NAME</th><th>Address</th></tr>"; 
+if($result->num_rows> 0)
+while($row $result->fetch_assoc()) {
+echo "<tr>"; echo "<td>". $row["usn")."</td>";
+echo "<td>". $row["name"]."</td>";
+echo "<td>". $row["add"]."</td></tr>"; 
+array push ($a, $row["usn"]);
+}
+}
+else
+echo "Table is Empty":
+echo "</table>";
+		$b=$a;
+		for($i=0;$i<($n-1);$i++)
+{
+$pos=$i;
+for($j=$i+1;$j<$n;$j++){
+if($a[$pos]>$a[$j])
+$pos=$j;
+}
+if($pos!=$i){
+$temp=$a[$i];
+$a[$i]=$a[$pos];
+$a[$pos]=$temp;
+}
+}
+$c=[];
+$d=[];
+
+$result=$conn->query($sql);
+if ($result->num_rows> 0) 
+{
+while ($row = $result->fetch_assoc()) {
+for ($i=0;$i<$n;$i++) {
+if ($row["usn"]== $a[$i]) {
+$c[$i]=$row["name"]:
+$d[$i]=$row["addr"];
+}
+}
+}
+}
+echo "<br>";
+echo "<center> AFTER SORTING <center>"; 
+echo "<table border='2'>";
+echo "<tr>";
+echo "<th>USN</th><th>NAME</th><th>Address</th></tr>"; 
+for ($i=0;$i<$n;$i++) {
+echo "<tr>";
+echo "<td>". Sa[$i]."</td>";
+echo "<td>". $c[$i].”</td>";
+echo "<td>". $d[$i]."</td></tr>";
+}
+echo "</table>";
+$conn->close();
+?>
+</body>
+</html>
+
+Output:
+
+Procedure:
+Open a terminal press key buttons - “Ctrl Alt t”
+$ sudo mysql -u root -p
+[sudo] password for ise16: isedept
+Enter password: isedept
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 5.7.41-0ubuntu0.18.04.1 (Ubuntu)
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use mysql ;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+Database changed
+
+mysql> create database weblab;
+Query OK, 1 row affected (0.00 sec)
+
+
+mysql> use weblab ;
+Database changed
+
+mysql> create table student(usnvarchar(10),name varchar(20),address varchar(20));
+Query OK, 0 rows affected (0.24 sec)
+
+mysql> show databases ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| weblab             |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> show tables ;
++------------------+
+| Tables_in_weblab |
++------------------+
+| student          |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> describe student ;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| usn     | varchar(10) | YES  |     | NULL    |       |
+| name    | varchar(20) | YES  |     | NULL    |       |
+| address | varchar(20) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from student ;
+Empty set (0.01 sec)
+
+mysql> insert into student values ( '20' , 'ANN' , 'Tumakuru' ) ;
+Query OK, 1 row affected (0.04 sec)
+mysql> select * from student ;
++------+------+----------+
+| usn  | name | address  |
++------+------+----------+
+| 20   | ANN  | Tumakuru |
++------+------+----------+
+1 row in set (0.00 sec)
+
+mysql> exit ;
+Bye
